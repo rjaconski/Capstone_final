@@ -1,0 +1,43 @@
+<!--Nick Eggert, sample homepage for capstone-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Search Engine</title>
+</head>
+
+<body>
+  <!--Title-->
+  <h1>Movie Search Engine</h1>
+  <!--2nd header, names-->
+  <h2>Created by Nick Eggert, Terrance Graves, Raymond Jaconski, and Samuel Jolade</h2>
+  <!--instructions-->
+  <h3>Choose a Movie Title or search for a Cinima Nearby</h3>
+  <!--search box, need to change routes to get proper data-->
+  <form action = "movie.php" method ="post">
+  	<label for="movies">Movies Now Playing:</label>
+
+    <select name="movies" id="movies">
+      
+      <option value="Clifford the Big Red Dog">Clifford the Big Red Dog</option>
+      <option value="Dune">Dune</option>
+      <option value="Eternals">Eternals</option>
+      <option value="Last Night in Soho">Last Night in Soho</option>
+      <option value="My Hero Academia: World Heroes Mission">My Hero Academia: World Heroes Mission</option>
+      <option value="Spencer">Spencer</option>
+      <option value="Venom: Let There Be Carnage">Venom: Let There Be Carnage</option>
+    </select>
+  	<input type = "submit">
+  </form>
+  <br>
+  <form action="geocode.php" method="post">
+    <label for="address">Find a theater: </label>
+    <input type='text' name='address'/>
+    <input type='submit' value='submit' />
+</form>
+
+</body>
+
+</html>
